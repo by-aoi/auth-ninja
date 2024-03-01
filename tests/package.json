@@ -1,0 +1,15 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "swifti",
+    "build": "swifti build"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "swifti": "^0.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
+}

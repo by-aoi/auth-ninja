@@ -1,0 +1,37 @@
+{
+  "name": "auth-ninja",
+  "version": "0.1.0",
+  "description": "Features for the implementation of Oauth2 on Google, Discord, Facebook and Github.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "workspaces": [
+    "./*",
+    "tests"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify terser",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/by-aoi/auth-ninja.git"
+  },
+  "homepage": "https://auth-ninja.vercel.app/",
+  "license": "MIT",
+  "keywords": [],
+  "author": "Aoi-san <aoi.san@outlook.com>",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "terser": "^5.25.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20"
+  }
+}
